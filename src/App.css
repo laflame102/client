@@ -36,3 +36,273 @@
     transform: rotate(360deg);
   }
 }
+
+/* WebSocket.css */
+
+.chat-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.chat-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.join-room,
+.room-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.room-input,
+.message-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.join-button,
+.leave-button,
+.send-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.join-button:hover,
+.leave-button:hover,
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+.room-name {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.messages-container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-list {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.message-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.message-item:last-child {
+  border-bottom: none;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.join-room {
+  margin-bottom: 20px;
+}
+
+.rooms-container {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+}
+
+.rooms-list {
+  width: 200px;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+}
+
+.room-panel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.room-button {
+  flex-grow: 1;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.room-button.active {
+  background-color: #ddd;
+}
+
+.leave-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.chat-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.room-chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.messages-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.message-item {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.message-input {
+  width: 100%;
+  padding: 10px;
+}
+
+.send-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.select-room-text {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+}
+
+/*  */
+
+/* Основний контейнер для чату */
+.chat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+/* Блок чату */
+.chat-box {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Заголовок чату */
+.chat-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Список повідомлень */
+.messages-list {
+  flex-grow: 1;
+  margin-bottom: 20px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 300px;
+}
+
+/* Елемент повідомлення */
+.message-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #e1f5fe;
+  color: #333;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+/* Контейнер для вводу та кнопки */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Поле вводу повідомлень */
+.message-input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Кнопка відправлення повідомлень */
+.send-button {
+  padding: 10px 15px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.send-button:hover {
+  background-color: #1e88e5;
+}
